@@ -10,7 +10,7 @@
                 fetch="https://github.com/kdrag0n" />   
                  
         <remote name="Corvus-Devices"
-                fetch="https://github.com/orgs/CorvusRom-Devices">
+                fetch="https://github.com/orgs/CorvusRom-Devices" />
 
          <remote name="mizdake7"
                 fetch="https://codeberg.org/mizdrake7"/>
