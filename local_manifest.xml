@@ -6,9 +6,13 @@
 
   
 
-        <remote  name="amritoj2"
+        <remote  name="Amritorock"
 
-                fetch="https://github.com/amritoj2" />
+                fetch="https://github.com/Amritorock" />
+
+        <remote  name="mizdrake7"
+
+                fetch="https://codeberg.org/mizdrake7" />
 
         <remote  name="clang"
 
@@ -18,11 +22,11 @@
 
 <!-- device trees -->
 
-        <project path="device/realme/r5x" name="pixel_device_r5x" remote="amritoj2" revision="twelve-plus" />
+        <project path="device/realme/r5x" name="device_realme_r5x" remote="Amritorock" revision="12" />
 
-        <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="amritoj2" revision="twelve" />
+        <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amritorock" revision="twelve" />
 
-        <project path="kernel/realme/r5x" name="kernel_realme_trinket" remote="amritoj2" revision="devel" clone-depth="1" />
+        <project path="kernel/realme/r5x" name="kernel_realme_r5x" remote="mizdrake7" revision="tombstone" clone-depth="1" />
 
 <!-- custom clang -->
 
