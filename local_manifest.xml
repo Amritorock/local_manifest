@@ -2,9 +2,7 @@
 
 <manifest>
 
-<!-- fetching sources -->     
-
-  
+<!-- fetching sources -->      
 
         <remote  name="Amritorock"
 
@@ -13,12 +11,6 @@
         <remote  name="mizdrake7"
 
                 fetch="https://codeberg.org/mizdrake7" />
-
-        <remote  name="clang"
-
-                fetch="https://github.com/kdrag0n" />   
-
-       
 
 <!-- device trees -->
 
@@ -33,11 +25,5 @@
 
         <remove-project name="android_frameworks_base" />
         <project path="frameworks/base" name="android_frameworks_base" remote="Amritorock" revision="patch-1" />
-
-
-
-<!-- custom clang -->
-
-        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
 
 </manifest>
