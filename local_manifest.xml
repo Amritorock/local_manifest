@@ -8,22 +8,21 @@
 
                 fetch="https://github.com/Amritorock" />
 
-        <remote  name="mizdrake7"
-
-                fetch="https://codeberg.org/mizdrake7" />
 
 <!-- device trees -->
 
         <project path="device/realme/r5x" name="device_realme_r5x" remote="Amritorock" revision="12L" />
 
-        <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amritorock" revision="twelve" />
+        <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amritorock" revision="12L" />
 
-        <project path="kernel/realme/r5x" name="kernel_realme_r5x" remote="mizdrake7" revision="tombstone" clone-depth="1" />
-
+        <project path="kernel/realme/r5x" name="kernel_realme_r5x" remote="Amritorock" revision="12L" clone-depth="1" />
 
 <!-- Replacement -->
 
-        <remove-project name="android_frameworks_base" />
-        <project path="frameworks/base" name="android_frameworks_base" remote="Amritorock" revision="patch-1" />
+        <remove-project name="frameworks_base" />
+        <project path="frameworks/base" name="frameworks_base" remote="Amritorock" revision="twelve-plus" />
+        
+        <remove-project name="vendor_aosp" />
+        <project path="vendor/aosp" name="vendor_aosp" remote="Amritorock" revision="twelve-plus" />
 
 </manifest>
