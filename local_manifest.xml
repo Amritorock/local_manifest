@@ -18,11 +18,9 @@
         <project path="kernel/realme/r5x" name="kernel_realme_trinket" remote="Amritorock" revision="devel" clone-depth="1" />
 
 <!-- Replacement -->
-
-        <remove-project name="frameworks_base" />
-        <project path="frameworks/base" name="frameworks_base" remote="Amritorock" revision="twelve-plus" />
         
         <remove-project name="vendor_aosp" />
         <project path="vendor/aosp" name="vendor_aosp" remote="Amritorock" revision="twelve-plus" />
+
 
 </manifest>
