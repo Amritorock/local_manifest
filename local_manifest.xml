@@ -8,6 +8,10 @@
 
                 fetch="https://github.com/Amritorock" />
 
+        <remote  name="clang"
+
+                fetch="https://github.com/kdrag0n" />
+
 
 <!-- device trees -->
 
@@ -22,5 +26,9 @@
         <remove-project name="vendor_aosp" />
         <project path="vendor/aosp" name="vendor_aosp" remote="Amritorock" revision="twelve-plus" />
 
+
+<!-- custom clang -->
+
+        <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="clang" revision="master" clone-depth="1" />
 
 </manifest>
