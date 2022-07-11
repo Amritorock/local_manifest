@@ -16,8 +16,9 @@
 
 <!-- Replacement -->
 
-        <remove-project name="android_frameworks_base" />
+        <remove-project name="frameworks_base" />
         <project path="frameworks/base" name="frameworks_base" remote="Amritorock" revision="twelve-plus" />
+        
         <remove-project name="vendor_aosp" />
         <project path="vendor/aosp" name="vendor_aosp" remote="Amritorock" revision="twelve-plus" />
 
