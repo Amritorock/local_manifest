@@ -25,6 +25,6 @@
         <project path="vendor/aosp" name="vendor_aosp" remote="Amritorock" revision="twelve-plus" />
 
 <!-- sepolicy -->
-
+        <remove-project name="platform/hardware/google/pixel-sepolicy" />
         <project path="hardware/google/pixel-sepolicy" name="android_hardware_google_pixel-sepolicy" remote="bheatleyyy" revision="r5x" />
 </manifest>
