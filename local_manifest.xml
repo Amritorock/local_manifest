@@ -14,14 +14,5 @@
 
         <project path="device/realme/r5x" name="android_device_realme_r5x" remote="Amritorock" revision="PIXEL-13" />
         <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amritorock" revision="Trinket" />
-        <project path="kernel/realme/r5x" name="kernel_realme_r5x" remote="Amritorock" revision="Chisato" clone-depth="1" />
-        <project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="android_prebuilts_clang_host_linux-x86_clang-r416183b1" remote="arrow" revision="arrow-11.0" />
-
-<!-- Replacement -->
-
-        <remove-project name="frameworks_base" />
-        <project path="frameworks/base" name="frameworks_base" remote="Amritorock" revision="thirteen" />
-       
-        <remove-project name="vendor_aosp" />
-        <project path="vendor/aosp" name="vendor_aosp" remote="Amritorock" revision="thirteen" />
+        <project path="kernel/realme/r5x" name="kernel_realme_r5x" remote="Amritorock" revision="Trinket" clone-depth="1" />
 </manifest>
