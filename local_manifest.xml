@@ -6,9 +6,6 @@
 
         <remote name="Amritorock"
                 fetch="https://github.com/Amritorock" />
-
-        <remote name="arrow"
-                fetch="https://github.com/ArrowOS-Devices" />
  
 <!-- device trees -->
 
@@ -20,4 +17,7 @@
 
         <remove-project name="frameworks_base" />
         <project path="frameworks/base" name="frameworks_base" remote="Amritorock" revision="thirteen" />
+
+        <remove-project name="vendor_aosp" />
+        <project path="vendor/aosp" name="vendor_aosp" remote="Amritorock" revision="thirteen" />
 </manifest>
