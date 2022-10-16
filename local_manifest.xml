@@ -20,8 +20,6 @@
 
         <remove-project name="frameworks_base" />
         <project path="frameworks/base" name="frameworks_base" remote="Amritorock" revision="thirteen" />
-        <remove-project name="frameworks_opt_telephony" />
-        <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="Amritorock" revision="thirteen" />
 
 <!-- Custom Clang -->
 
