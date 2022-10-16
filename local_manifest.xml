@@ -6,6 +6,9 @@
 
         <remote name="Amritorock"
                 fetch="https://github.com/Amritorock" />
+    
+         <remote name="ImSurajxD"
+                fetch="https://gitlab.com/ImSurajxD" />
  
 <!-- device trees -->
 
@@ -18,5 +21,10 @@
         <remove-project name="frameworks_base" />
         <project path="frameworks/base" name="frameworks_base" remote="Amritorock" revision="thirteen" />
         <remove-project name="frameworks_opt_telephony" />
-        <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="Amritorock" revision="thirteen" /> 
+        <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="Amritorock" revision="thirteen" />
+
+<!-- Custom Clang -->
+
+        <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="ImSurajxD" revision="master" clone-depth="1" />
+ 
 </manifest>
