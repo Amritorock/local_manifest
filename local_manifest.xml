@@ -7,9 +7,6 @@
         <remote name="Amritorock"
                 fetch="https://github.com/Amritorock" />
     
-         <remote name="ImSurajxD"
-                fetch="https://gitlab.com/ImSurajxD" />
- 
 <!-- device trees -->
 
         <project path="device/realme/r5x" name="android_device_realme_r5x" remote="Amritorock" revision="VOLTEE" />
@@ -20,9 +17,4 @@
 
         <remove-project name="frameworks_base" />
         <project path="frameworks/base" name="frameworks_base" remote="Amritorock" revision="thirteen" />
-
-<!-- Custom Clang -->
-
-        <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="ImSurajxD" revision="master" clone-depth="1" />
- 
 </manifest>
