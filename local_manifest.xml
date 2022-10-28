@@ -13,6 +13,10 @@
         <remote name="crdroidandroid"
                 fetch="https://github.com/crdroidandroid" />
 
+        
+         <remote name="cr"
+                fetch="https://gitlab.com/crdroidandroid" />
+
     
 <!-- device trees -->
 
@@ -20,7 +24,9 @@
         <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amritorock" revision="Trinket" />
         <project path="kernel/realme/r5x" name="kernel_realme_r5x" remote="Amritorock" revision="Chisato" clone-depth="1" />
         <project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="android_prebuilts_clang_host_linux-x86_clang-r416183b1" remote="arrow" revision="arrow-11.0" />
+        <project path="vendor/gapps" name="android_vendor_gapps" remote="cr" revision="12.1" />
 
+  
 <!-- Remove HALs -->
 
         <remove-project name="crdroidandroid/android_frameworks_base" /> 
