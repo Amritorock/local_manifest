@@ -12,9 +12,8 @@
 
         <remote name="crdroidandroid"
                 fetch="https://github.com/crdroidandroid" />
-
-        
-         <remote name="cr"
+       
+        <remote name="cr"
                 fetch="https://gitlab.com/crdroidandroid" />
 
     
