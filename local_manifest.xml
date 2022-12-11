@@ -9,9 +9,6 @@
 
        <remote name="clang"
                 fetch="https://gitlab.com/Amritorock" />
-
-       <remote name="LineageOS"
-                fetch="https://github.com/LineageOS" />
     
 <!-- device trees -->
 
@@ -20,24 +17,4 @@
         <project path="kernel/realme/r5x" name="kernel_realme_r5x" remote="Amritorock" revision="OSS" clone-depth="1" />
         <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
   
-
-<!-- Replacement -->
-
-        <remove-project name="LineageOS/android_frameworks_base" />
-        <project path="frameworks/base" name="android_frameworks_base" remote="Amritorock" revision="13.0" />
-
-        <remove-project name="LineageOS/android_frameworks_opt_telephony" />
-        <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="Amritorock" revision="13.0" />
-
-        <remove-project name="LineageOS/android_packages_apps_Trebuchet" />
-        <project path="packages/apps/Trebuchet" name="android_packages_apps_Trebuchet" remote="Amritorock" revision="13.0" />
- 
-        <remove-project name="LineageOS/android_system_core" />
-        <project path="system/core" name="android_system_core" remote="Amritorock" revision="13.0" />
-
-        <remove-project name="LineageOS/android_vendor_lineage" />
-        <project path="vendor/lineage" name="android_vendor_lineage" remote="Amritorock" revision="13.0" />
-   
-        <remove-project name="LineageOS/android_packages_apps_Settings" />
-        <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="Amritorock" revision="13.0" />
 </manifest>
