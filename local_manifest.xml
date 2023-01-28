@@ -7,6 +7,9 @@
         <remote name="Amritorock"
                 fetch="https://github.com/Amritorock" />
 
+        <remote name="mcdofrenchfreis"
+                fetch="https://github.com/mcdofrenchfreis" />
+
        <remote name="clang"
                 fetch="https://gitlab.com/Amritorock" />
 
@@ -15,14 +18,14 @@
     
 <!-- device trees -->
 
-        <project path="device/realme/r5x" name="android_device_realme_r5x" remote="Amritorock" revision="rice" />
+        <project path="device/realme/r5x" name="android_device_realme_r5x" remote="Amritorock" revision="Rice" />
         <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amritorock" revision="Trinket" />
-        <project path="kernel/realme/r5x" name="kernel_realme_r5x" remote="Amritorock" revision="OSS" clone-depth="1" />
+        <project path="kernel/realme/r5x" name="biofrost-kernel-realme-trinket" remote="mcdofrenchfreis" revision="inline/labs" clone-depth="1" />
         <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
   
 <!-- Replacement -->
 
-        <remove-project name="LineageOS/android_hardware_qcom_sm8150_display" />
-        <project path="hardware/qcom/sm8150/display" name="hardware_qcom_sm8150_display" remote="Amritorock" revision="thirteen" /> 
+        <remove-project name="LineageOS/android_frameworks_base" />
+        <project path="frameworks/base" name="android_frameworks_base" remote="Amritorock" revision="lineage-20.0" /> 
 
 </manifest>
