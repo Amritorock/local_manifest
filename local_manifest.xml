@@ -13,9 +13,6 @@
        <remote name="clang"
                 fetch="https://gitlab.com/Amritorock" />
 
-       <remote name="ThankYouMario"
-                fetch="https://gitlab.com/ThankYouMario" />
-
        <remote name="LineageOS"
                 fetch="https://github.com/LineageOS" />
     
@@ -25,8 +22,7 @@
         <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amritorock" revision="Trinket" />
         <project path="kernel/realme/r5x" name="biofrost-kernel-realme-trinket" remote="mcdofrenchfreis" revision="inline/labs" clone-depth="1" />
         <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
-        <project path="prebuilts/clang/host/linux-x86/clang-standalone" name="android_prebuilts_clang-standalone" remote="ThankYouMario" revision="16" clone-depth="1" />
-  
+
 
 <!-- Replacement -->
 
