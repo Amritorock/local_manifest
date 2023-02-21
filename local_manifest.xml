@@ -23,4 +23,9 @@
         <project path="kernel/realme/r5x" name="biofrost-kernel-realme-trinket" remote="mcdofrenchfreis" revision="inline/labs" clone-depth="1" />
         <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
 
+<!-- Replacement -->
+
+        <remove-project name="crdroidandroid/android_frameworks_base" />
+        <project path="frameworks/base" name="android_frameworks_base-1" remote="Amritorock" revision="13.0" />
+
 </manifest>
