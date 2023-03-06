@@ -31,9 +31,5 @@
         <remove-project name="LineageOS/android_packages_apps_Settings" />
         <project path="package/apps/Settings" name="android_packages_apps_Settings" remote="Amritorock" revision="lineage-19.1" />
 
-        <remove-project name="LineageOS/android_lineage-sdk" />
-        <project path="lineage-sdk" name="android_lineage-sdk" remote="Amritorock" revision="lineage-19.1" />
-
-
 
 </manifest>
