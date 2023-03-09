@@ -4,16 +4,21 @@
 
 <!-- fetching sources -->      
 
-        <remote name="om"
-                fetch="https://github.com/takumi021" />
+        <remote name="Amritorock"
+                fetch="https://github.com/Amritorock" />
 
        <remote name="clang"
                 fetch="https://gitlab.com/Amritorock" />
     
 <!-- device trees -->
 
-        <project path="device/realme/r5x" name="device_realme_r5x" remote="om" revision="13" />
-        <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="om" revision="thirteen" />
-        <project path="kernel/realme/r5x" name="kernel_realme_trinket" remote="om" revision="Chisato" clone-depth="1" />
+        <project path="device/realme/r5x" name="device_realme_r5x" remote="Amritorock" revision="13.0" />
+        <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amritorock" revision="Trinket" />
+        <project path="kernel/realme/r5x" name="kernel_realme_trinket" remote="Amritorock" revision="OSS" clone-depth="1" />
         <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
+
+<!-- replacement -->
+        <remove-project name="frameworks_base" />
+        <project path="frameworks/base" name="frameworks_base" remote="Amritorock" revision="thirteen" />
+
 </manifest>
