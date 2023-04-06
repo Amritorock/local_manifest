@@ -9,6 +9,9 @@
 
        <remote name="clang"
                 fetch="https://gitlab.com/Amritorock" />
+
+        <remote name="PixelExperience"
+                fetch="https://github.com/PixelExperience" />
     
 <!-- device trees -->
 
@@ -22,6 +25,6 @@
         <project path="frameworks/base" name="frameworks_base" remote="Amritorock" revision="thirteen" />
 
         <remove-project name="frameworks_av" />
-        <project path="frameworks/av" name="frameworks_av" remote="Amritorock" revision="thirteen" />
+        <project path="frameworks/av" name="frameworks_av" remote="PixelExperience" revision="twelve-plus" />
 
 </manifest>
