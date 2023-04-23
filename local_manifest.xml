@@ -24,7 +24,4 @@
         <remove-project name="frameworks_base" />
         <project path="frameworks/base" name="frameworks_base" remote="Amritorock" revision="thirteen" />
 
-        <remove-project name="frameworks_av" />
-        <project path="frameworks/av" name="android_frameworks_av" remote="Amritorock" revision="tiramisu" />
-
 </manifest>
