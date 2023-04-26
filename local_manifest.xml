@@ -24,8 +24,10 @@
         <remove-project name="frameworks_base" />
         <project path="frameworks/base" name="frameworks_base" remote="Amritorock" revision="thirteen" />
         <remove-project name="frameworks_av" />
-        <project path="frameworks/av" name="frameworks_av" remote="Amritorock" revision="thirteen" />
+        <project path="frameworks/av" name="android_frameworks_av" remote="CherishOS" revision="tiramisu" />
         <remove-project name="hardware_interfaces" />
-
         <project path="hardware/interfaces" name="android_hardware_interfaces" remote="CherishOS" revision="tiramisu" />
+        <remove-project name="frameworks_native" />
+
+        <project path="frameworks/native" name="android_frameworks_native" remote="CherishOS" revision="tiramisu" />
 </manifest>
