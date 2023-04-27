@@ -24,7 +24,7 @@
         <remove-project name="frameworks_base" />
         <project path="frameworks/base" name="frameworks_base" remote="Amritorock" revision="thirteen" />
         <remove-project name="bionic" />
-        <project path="bionic" name="bionic" remote="Amritorock" revision="thirteen" />
+        <project path="bionic" name="android_bionic" remote="CherishOS" revision="tiramisu" />
 
 
 </manifest>
