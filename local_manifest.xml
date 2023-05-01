@@ -12,6 +12,10 @@
 
         <remote name="CherishOS"
                 fetch="https://github.com/CherishOS" />
+        
+        <remote name="ironHeart6"
+                fetch="https://github.com/ironHeart6" />
+    
     
 <!-- device trees -->
 
@@ -22,9 +26,19 @@
 
 <!-- replacement -->
         <remove-project name="frameworks_base" />
-        <project path="frameworks/base" name="frameworks_base" remote="Amritorock" revision="thirteen" />
+        <project path="frameworks/base" name="frameworks_base" remote="Amritorock" revision="CAMFIX" />
         <remove-project name="bionic" />
-        <project path="bionic" name="android_bionic" remote="CherishOS" revision="tiramisu" />
+        <project path="bionic" name="bionic" remote="Amritorock" revision="thirteen" />
+        <remove-project name="build_soong" />
+
+        <project path="build/soong" name="build_soong" remote="ironHeart6" revision="thirteen" />
+        <remove-project name="frameworks_av" />
+
+        <project path="frameworks/av" name="frameworks_av" remote="Amritorock" revision="CAMFIX" />
+
+
+
+
 
 
 </manifest>
