@@ -29,4 +29,6 @@
         <project path="frameworks/base" name="frameworks_base-1" remote="Amritorock" revision="thirteen" />
         <remove-project name="frameworks_opt_telephony" />
         <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="Amritorock" revision="thirteen" />
+        <remove-project name="build_soong" />
+        <project path="build/soong" name="build_soong" remote="Amritorock" revision="thirteen" />
 </manifest>
