@@ -22,7 +22,6 @@
         <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amritorock" revision="Trinket" />
         <project path="kernel/realme/r5x" name="biofrost-kernel-realme-trinket" remote="mcdofrenchfreis" revision="inline/labs" clone-depth="1" />
         <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
-        <project path="prebuilts/clang/host/linux-x86/clang-neutron" name="clang-neutron" remote="clang" revision="master" clone-depth="1" />
 
 <!-- replacement -->
         <remove-project name="frameworks_base" />
