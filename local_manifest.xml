@@ -24,10 +24,7 @@
         <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
 
 <!-- replacement -->
-        <remove-project name="frameworks_base" />
-        <project path="frameworks/base" name="frameworks_base-1" remote="Amritorock" revision="thirteen" />
-        <remove-project name="frameworks_opt_telephony" />
-        <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="Amritorock" revision="thirteen" />
+
         <remove-project name="build_soong" />
         <project path="build/soong" name="build_soong" remote="Amritorock" revision="thirteen" />
 </manifest>
