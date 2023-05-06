@@ -10,8 +10,8 @@
        <remote name="clang"
                 fetch="https://gitlab.com/Amritorock" />
 
-        <remote name="mcdofrenchfreis"
-                fetch="https://github.com/mcdofrenchfreis" />
+        <remote name="xyz-prjkt"
+                fetch="https://github.com/xyz-prjkt" />
         
         <remote name="ironHeart6"
                 fetch="https://github.com/ironHeart6" />
@@ -22,7 +22,7 @@
         <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amritorock" revision="Trinket" />
         <project path="kernel/realme/r5x" name="kernel_realme_r5x" remote="Amritorock" revision="Wip" clone-depth="1" />
         <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
-        <project path="prebuilts/clang/host/linux-x86/clang-neutron" name="clang-neutron" remote="clang" revision="master" clone-depth="1" />
+        <project path="prebuilts/clang/host/linux-x86/xRageTC-clang" name="xRageTC-clang" remote="xyz-prjkt" revision="main" clone-depth="1" />
 
 <!-- replacement -->
 
