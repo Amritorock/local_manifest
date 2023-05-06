@@ -23,9 +23,4 @@
         <project path="kernel/realme/r5x" name="kernel_realme_r5x" remote="Amritorock" revision="Wip" clone-depth="1" />
         <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
         <project path="prebuilts/clang/host/linux-x86/xRageTC-clang" name="xRageTC-clang" remote="xyz-prjkt" revision="main" clone-depth="1" />
-
-<!-- replacement -->
-
-        <remove-project name="build_soong" />
-        <project path="build/soong" name="build_soong" remote="Amritorock" revision="thirteen" />
 </manifest>
