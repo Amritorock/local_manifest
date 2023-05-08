@@ -25,8 +25,7 @@
         <project path="prebuilts/clang/host/linux-x86/xRageTC-clang" name="xRageTC-clang" remote="xyz-prjkt" revision="main" clone-depth="1" />
 
 <!-- Replacement -->
-        <remove-project name="vendor_yaap" />
-        <project path="vendor/yaap" name="vendor_yaap" remote="Amritorock" revision="thirteen" />
+
         <remove-project name="frameworks_av" />
 
         <project path="frameworks/av" name="frameworks_av-1" remote="Amritorock" revision="Test" />
