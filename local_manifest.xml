@@ -26,11 +26,8 @@
 
 <!-- Replacement -->
 
-        <remove-project name="frameworks_av" />
+        <remove-project name="bionic" />
 
-        <project path="frameworks/av" name="frameworks_av-1" remote="Amritorock" revision="thirteen" />
-        <remove-project name="vendor_yaap" />
-
-        <project path="vendor/yaap" name="vendor_yaap" remote="Amritorock" revision="thirteen" />      
+        <project path="bionic" name="bionic-2" remote="Amritorock" revision="thirteen" />
 </manifest>
 
