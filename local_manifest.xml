@@ -4,32 +4,30 @@
 
 <!-- fetching sources -->      
 
-        <remote name="Amritorock"
-                fetch="https://github.com/Amritorock" />
+        <remote name="404"
+                fetch="https://github.com/Project-404-r5x" />
 
-        <remote name="mcdofrenchfreis"
-                fetch="https://github.com/mcdofrenchfreis" />
-
-       <remote name="arrow"
-                fetch="https://github.com/ArrowOS-Devices" />
-
-       <remote name="LineageOS"
-                fetch="https://github.com/LineageOS" />
+        <remote name="clang"
+                fetch="https://gitlab.com/Amritorock" />
     
 <!-- device trees -->
 
-        <project path="device/realme/r5x" name="android_device_realme_r5x" remote="Amritorock" revision="12.1" />
-        <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amritorock" revision="Trinket" />
-        <project path="kernel/realme/r5x" name="kernel_realme_r5x" remote="Amritorock" revision="OSS" clone-depth="1" />
-        <project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="android_prebuilts_clang_host_linux-x86_clang-r416183b1" remote="arrow" revision="arrow-11.0" />
+        <project path="device/realme/r5x" name="device_realme_r5x" remote="404" revision="p404" />
+        <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="404" revision="p404" />
+        <project path="device/realme/r5x-kernel" name="device_realme_r5x-kernel" remote="404" revision="p404" clone-depth="1" />
+        <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
 
 <!-- Replacement -->
 
-        <remove-project name="LineageOS/android_frameworks_base" />
-        <project path="frameworks/base" name="android_frameworks_base" remote="Amritorock" revision="Lineage-12" />
+        <remove-project name="android_build" />
+        <remove-project name="android_frameworks_opt_telephony" />
+        <project path="build/make" name="android_build" remote="404" revision="tokui" />
+        <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="404" revision="tokui" />
 
-        <remove-project name="LineageOS/android_packages_apps_Settings" />
-        <project path="package/apps/Settings" name="android_packages_apps_Settings" remote="Amritorock" revision="lineage-19.1" />
+<!-- Hal's -->
 
-
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="hardware_qcom_audio" remote="404" revision="sm8150" />
+        <project path="hardware/qcom/display" name="hardware_qcom_display" remote="404" revision="sm8150" />
+        <project path="hardware/qcom/media" name="hardware_qcom_media" remote="404" revision="sm8150" />
 </manifest>
+
