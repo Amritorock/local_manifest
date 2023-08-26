@@ -17,5 +17,9 @@
         <project path="kernel/realme/r5x" name="kernel_realme_r5x" remote="Amritorock" revision="OSS" clone-depth="1" />
         <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="Amritorock" revision="v4a" />
         <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
+
+<!-- Replacement -->
+        <remove-project name="platform/hardware/libhardware_legacy" />
+        <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="Amritorock" revision="lineage-20.0" />
 </manifest>
 
