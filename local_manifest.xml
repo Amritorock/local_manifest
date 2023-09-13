@@ -28,7 +28,5 @@
 	<project path="vendor/aospa" name="android_vendor_aospa" remote="amrito" revision="topaz">
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
-	<remove-project name="AOSPA/android_vendor_qcom_opensource_commonsys-intf_display" />
-        <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_commonsys-intf_display" remote="P-404" revision="tokui" />
    </manifest>
 
