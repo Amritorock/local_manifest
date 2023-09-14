@@ -13,8 +13,8 @@
         <remote name="clang"
                 fetch="https://gitlab.com/Amritorock" />
 
-	<remote name="P-404"
-                fetch="https://github.com/P-404" />
+	<remote name="caf"
+                fetch="https://github.com/Project-404-r5x" />
     
 <!-- device trees -->
 
@@ -28,5 +28,12 @@
 	<project path="vendor/aospa" name="android_vendor_aospa" remote="amrito" revision="topaz">
           <linkfile src="build.sh" dest="rom-build.sh" />
         </project>
+
+<!-- Hals -->
+
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="hardware_qcom_audio" remote="caf" revision="tokui" />
+        <project path="hardware/qcom/display" name="hardware_qcom_display" remote="caf" revision="tokui" />
+        <project path="hardware/qcom/media" name="hardware_qcom_media" remote="caf" revision="tokui" />
+	
    </manifest>
 
