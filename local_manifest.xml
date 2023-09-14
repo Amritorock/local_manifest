@@ -14,7 +14,7 @@
                 fetch="https://gitlab.com/Amritorock" />
 
 	<remote name="caf"
-                fetch="https://github.com/Project-404-r5x" />
+                fetch="https://github.com/AOSPA" />
     
 <!-- device trees -->
 
@@ -31,9 +31,9 @@
 
 <!-- Hals -->
 
-        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="hardware_qcom_audio" remote="caf" revision="tokui" />
-        <project path="hardware/qcom/display" name="hardware_qcom_display" remote="caf" revision="tokui" />
-        <project path="hardware/qcom/media" name="hardware_qcom_media" remote="caf" revision="tokui" />
+        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom_audio" remote="caf" revision="topaz-855" />
+        <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="caf" revision="topaz-855" />
+        <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="caf" revision="topaz-855" />
 	
    </manifest>
 
