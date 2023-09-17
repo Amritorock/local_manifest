@@ -13,6 +13,9 @@
         <remote name="bliss"
                 fetch="https://github.com/Amritokarmokar" />
 
+        <remote  name="web" 
+                 fetch="https://github.com/LineageOS" />
+
 <!-- device trees -->
 
         <project path="device/realme/r5x" name="android_device_realme_r5x" remote="Amritorock" revision="bliss" />
@@ -23,8 +26,10 @@
 
 <!-- Changes needed for Device -->
         <remove-project name="platform_bionic" />
+        <remove-project name="android_external_chromium-webview_prebuilt_arm64" />
         <remove-project name="platform_frameworks_base" />
         <project path="frameworks/base" name="platform_frameworks_base" remote="bliss" revision="typhoon" />
         <project path="bionic" name="platform_bionic" remote="bliss" revision="typhoon" />
+        <project path="external/chromium-webview/prebuilt/arm64" name="android_external_chromium-webview_prebuilt_arm64" remote="web" revision="backup/main_20230314" />
 </manifest>
 
