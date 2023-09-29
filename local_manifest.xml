@@ -10,26 +10,16 @@
        <remote name="clang"
                 fetch="https://gitlab.com/Amritorock" />
        
-        <remote name="bliss"
-                fetch="https://github.com/Amritokarmokar" />
-
-        <remote  name="web" 
-                 fetch="https://github.com/LineageOS" />
-
 <!-- device trees -->
 
-        <project path="device/realme/r5x" name="android_device_realme_r5x" remote="Amritorock" revision="bliss" />
+        <project path="device/realme/r5x" name="android_device_realme_r5x" remote="Amritorock" revision="arrow" />
         <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amritorock" revision="libperf" />
         <project path="kernel/realme/r5x" name="kernel_realme_r5x" remote="Amritorock" revision="OSS" clone-depth="1" />
         <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="Amritorock" revision="v4a" clone-depth="1" />
         <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
 
 <!-- Changes needed for Device -->
-        <remove-project name="platform_bionic" />
-        <remove-project name="android_external_chromium-webview_prebuilt_arm64" />
-        <remove-project name="platform_frameworks_base" />
-        <project path="frameworks/base" name="platform_frameworks_base" remote="bliss" revision="typhoon" />
-        <project path="bionic" name="platform_bionic" remote="bliss" revision="typhoon" />
-        <project path="external/chromium-webview/prebuilt/arm64" name="android_external_chromium-webview_prebuilt_arm64" remote="web" revision="backup/main_20230314" />
+        <remove-project name="android_frameworks_opt_telephony" />
+        <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="Amritorock" revision="arrow-13.1" />
 </manifest>
 
