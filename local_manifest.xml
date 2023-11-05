@@ -12,14 +12,10 @@
        
 <!-- device trees -->
 
-        <project path="device/realme/r5x" name="android_device_realme_r5x" remote="Amritorock" revision="wip" />
-        <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amritorock" revision="Trinket" />
-        <project path="kernel/realme/r5x" name="kernel_realme_r5x" remote="Amritorock" revision="OSS" clone-depth="1" />
+        <project path="device/realme/r5x" name="android_device_realme_r5x" remote="Amritorock" revision="evox" />
+        <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amritorock" revision="Udc" />
+        <project path="kernel/realme/r5x" name="kernel_realme_r5x" remote="Amritorock" revision="Udc" clone-depth="1" />
         <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="Amritorock" revision="v4a" clone-depth="1" />
         <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
-
-<!-- Changes needed for Device -->
-        <remove-project name="android_frameworks_opt_telephony" />
-        <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="Amritorock" revision="arrow-13.1" />
 </manifest>
 
