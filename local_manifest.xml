@@ -18,7 +18,7 @@
         <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="Amritorock" revision="v4a" clone-depth="1" />
 
 <!-- Changes needed for Device -->
-        <remove-project name="android_frameworks_av" />
+        <remove-project name="LineageOS-UL/android_frameworks_av" />
         <project path="frameworks/av" name="android_frameworks_av" remote="Amritorock" revision="lineage-21.0" />
         
 </manifest>
