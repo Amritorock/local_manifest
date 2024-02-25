@@ -22,7 +22,7 @@
 
 <!-- Changes needed for Device -->
         <remove-project name="LineageOS-UL/android_frameworks_av" />
-        <project path="frameworks/av" name="LineageOS/android_frameworks_av" remote="LineageOS" revision="lineage-21.0" />
+        <project path="frameworks/av" name="android_frameworks_av" remote="LineageOS" revision="lineage-21.0" />
         
 </manifest>
 
