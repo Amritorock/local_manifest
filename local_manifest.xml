@@ -9,6 +9,9 @@
 
        <remote name="clang"
                 fetch="https://gitlab.com/Amritorock" />
+
+       <remote name="lineage"
+                fetch="https://github.com/lineageos" />
        
 <!-- device trees -->
 
@@ -19,7 +22,7 @@
 
 <!-- Changes needed for Device -->
         <remove-project name="LineageOS-UL/android_frameworks_av" />
-        <project path="frameworks/av" name="android_frameworks_av" remote="Amritorock" revision="lineage-21.0" />
+        <project path="frameworks/av" name="android_frameworks_av" remote="lineage" revision="lineage-21.0" />
         
 </manifest>
 
