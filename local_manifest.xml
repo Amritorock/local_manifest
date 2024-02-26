@@ -13,7 +13,7 @@
 <!-- device trees -->
 
         <project path="device/realme/r5x" name="device_realme_r5x" remote="Amritorock" revision="10" />
-        <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amritorock" revision="10" />
+        <project path="vendor/realme/r5x" name="vendor_realme_r5x_10" remote="Amritorock" revision="master" />
         <project path="kernel/realme/r5x" name="kernel_realme_r5x" remote="Amritorock" revision="OSS" clone-depth="1" />
 </manifest>
 
