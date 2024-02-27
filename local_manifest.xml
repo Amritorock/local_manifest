@@ -5,7 +5,7 @@
 <!-- fetching sources -->      
 
         <remote name="Amritorock"
-                fetch="ssh://git@github.com/Amritorock" />
+                fetch="https://github.com/Amritorock" />
 
        <remote name="clang"
                 fetch="https://gitlab.com/Amritorock" />
