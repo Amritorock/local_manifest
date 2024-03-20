@@ -10,9 +10,6 @@
        <remote name="clang"
                 fetch="https://gitlab.com/Amritorock" />
 
-       <remote name="LineageOS"
-                fetch="https://github.com/LineageOS" />
-       
 <!-- device trees -->
 
         <project path="device/realme/r5x" name="android_device_realme_r5x" remote="Amritorock" revision="udc" />
