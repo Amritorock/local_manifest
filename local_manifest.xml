@@ -25,8 +25,8 @@
         <remove-project name="AOSPA/android_vendor_aospa" />
         <remove-project name="android_vendor_aospa_prebuilt" />
         <remove-project name="AOSPA/android_frameworks_base" />
-        <project path="frameworks/base" name="frameworks_base" remote="clo" revision="uvite" />
-        <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="clo" revision="uvite" />
+        <project path="frameworks/base" name="frameworks_base" remote="clo" />
+        <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="clo" />
         <project path="vendor/aospa/prebuilt" name="android_vendor_aospa_prebuilt" remote="blobs-gitlab" />
         <project path="vendor/aospa" name="vendor_aospa" remote="clo" >
         <linkfile src="build.sh" dest="rom-build.sh" />
