@@ -4,41 +4,35 @@
 
 <!-- fetching sources -->      
 
-        <remote name="amrito"
-                fetch="https://github.com/Project-404-r5x" />
-
-        <remote name="clang"
-                fetch="https://gitlab.com/Amritorock" />
-
-        <remote name="Amritorock"
-                fetch="https://github.com/Amritorock" />
+        <remote name="clo"
+                fetch="https://github.com/aospa-realme-trinket" />
 
     
 <!-- device trees -->
 
-        <project path="device/realme/r5x" name="device_realme_r5x" remote="amrito" revision="p404" />
-        <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="amrito" revision="p404" />
-        <project path="device/realme/r5x-kernel" name="device_realme_r5x-kernel" remote="amrito" revision="p404" />
-        <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="clang" revision="master" clone-depth="1" />
+        <project path="device/realme/r5x" name="device_realme_r5x" remote="clo" />
+        <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="clo" />
+        <project path="device/realme/r5x-kernel" name="device_realme_r5x-kernel" remote="clo" />
 
 <!-- Replacement -->
-        <remove-project name="android_build" />
-        <remove-project name="android_frameworks_opt_telephony" />
-        <project path="build/make" name="android_build" remote="amrito" revision="tokui" caf="platform/build_repo"  >
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-    </project>
-    <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="amrito" revision="tokui" />
-
-<!-- Hals -->
-
-        <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="hardware_qcom_audio" remote="amrito" revision="sm8150" />
-        <project path="hardware/qcom/display" name="hardware_qcom_display" remote="amrito" revision="sm8150" />
-        <project path="hardware/qcom/media" name="hardware_qcom_media" remote="amrito" revision="sm8150" />
-
-   </manifest>
+        <remove-project name="AOSPA/android_build" />
+        <remove-project name="AOSPA/android_frameworks_opt_telephony" />
+        <remove-project name="AOSPA/android_vendor_aospa" />
+        <remove-project name="android_vendor_aospa_prebuilt" />
+        <remove-project name="AOSPA/android_frameworks_base" />
+        <project path="frameworks/base" name="frameworks_base" remote="clo" revision="uvite" />
+        <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="clo" revision="uvite" />
+        <project path="vendor/aospa/prebuilt" name="android_vendor_aospa_prebuilt" remote="blobs-gitlab" />
+        <project path="vendor/aospa" name="vendor_aospa" remote="clo" >
+        <linkfile src="build.sh" dest="rom-build.sh" />
+        </project>
+        <project path="build/make" name="build_make" remote="clo" >
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+        </project>
+ </manifest>
 
