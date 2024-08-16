@@ -5,7 +5,12 @@
 <!-- fetching sources -->      
 
         <remote name="clo"
-                fetch="https://github.com/aospa-realme-trinket" />
+                fetch="https://github.com/aospa-realme-trinket"
+                revision="uvite" />
+
+        <remote  name="blobs-gitlab"
+                 fetch="https://gitlab.com/ThankYouMario"
+                 revision="uvite" />
 
     
 <!-- device trees -->
