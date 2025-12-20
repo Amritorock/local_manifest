@@ -12,10 +12,14 @@
                  fetch="https://github.com/user-why-red"
                  revision="android-4.19-stable" />
 
+        <remote  name="cr"
+                 fetch="https://github.com/crdroidandroid"
+                 revision="16.0" />
+
     
 <!-- device trees -->
 
         <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_sdm660_419" remote="kernel" />
         <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="Amrito" />
-
+        <project path="hardware/dolby" name="android_hardware_dolby" remote="cr" />
  </manifest>
