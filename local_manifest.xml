@@ -6,20 +6,13 @@
 
         <remote name="Amrito"
                 fetch="https://github.com/amritorock"
-                revision="16" />
-
-        <remote  name="kernel"
-                 fetch="https://github.com/user-why-red"
-                 revision="android-4.19-stable" />
-
-        <remote  name="cr"
-                 fetch="https://github.com/crdroidandroid"
-                 revision="16.0" />
+                revision="android-16" />
 
     
 <!-- device trees -->
 
-        <project path="kernel/xiaomi/lavender" name="android_kernel_xiaomi_sdm660_419" remote="kernel" />
-        <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="Amrito" />
-        <project path="hardware/dolby" name="android_hardware_dolby" remote="cr" />
+        <project path="device/realme/r5x" name="android_device_realme_r5x" remote="Amrito" />
+        <project path="kernel/realme/r5x" name="kernel_realme_sm6125" remote="Amrito" />
+        <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amrito" />
+        <project path="hardware/dolby" name="hardware_dolby" remote="Amrito" />
  </manifest>
