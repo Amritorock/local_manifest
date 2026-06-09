@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- Device : Redmi Note 7/7s (lavender) -->
+
 <manifest>
-
 <!-- fetching sources -->      
-
         <remote name="Amrito"
-                fetch="https://github.com/amritorock"
-                revision="android-16" />
+                fetch="https://github.com/amritorock" />
 
     
 <!-- device trees -->
+        <project path="device/xiaomi/lavender" name="device_xiaomi_lavender" remote="Amrito" revision="android-16" />
+        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender" remote="Amrito" revision="android-16" clone-depth="1" />
+        <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender" remote="Amrito" revision="android-16" clone-depth="1" />
 
-        <project path="device/realme/r5x" name="android_device_realme_r5x" remote="Amrito" />
-        <project path="kernel/realme/r5x" name="kernel_realme_sm6125" remote="Amrito" />
-        <project path="vendor/realme/r5x" name="vendor_realme_r5x" remote="Amrito" />
-        <project path="hardware/dolby" name="hardware_dolby" remote="Amrito" />
+<!-- Hardware -->
+        <project path="hardware/xiaomi" name="hardware_xiaomi" remote="Amrito" revision="android-16" />
+        <project path="hardware/qcom-caf/sdm660/camera" name="hardware_qcom_camera" remote="Amrito" revision="16" />
  </manifest>
